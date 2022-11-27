@@ -1,0 +1,15 @@
+@import "../../constants/variables";
+
+.progress-bar {
+  background-color: $primary-dark-color;
+  height: 12px;
+  position: relative;
+  z-index: 10;
+
+  .progress {
+    position: relative;
+    width: 17%;
+    height: 100%;
+    background: linear-gradient(270deg, #00FFE0 0%, rgba(0, 255, 224, 0) 100%);;
+  }
+}

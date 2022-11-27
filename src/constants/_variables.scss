@@ -1,0 +1,29 @@
+// color
+$white: #fff;
+$primary-color: #00FFE0;
+$primary-dark-color: #008d96;
+$primary-deep-dark-color: #005656;
+$text-color: $white;
+$text-dark-color: #1C3245;
+$text-tint-color: $primary-color;
+
+$danger-color: #FF0000;
+
+$bg-dark: #0A0D14;
+$bg-dark60: rgba(10, 13, 20, 0.6);
+$bg-transition: rgba(10, 13, 20, 0.6);
+
+$role-sm: #D355FF;
+$role-sm-dark: #4C0071;
+$role-sm-tint: #FF00F5;
+$role-team1: #FFC700;
+$role-team2: #FF5C00;
+$role-team-dark: #933500;
+
+
+// font
+$font-base: 1rem;
+$h1-font-size: $font-base * 3 ;
+$h2-font-size: $font-base * 2 ;
+$h3-font-size: $font-base * 1.5 ;
+$body-font-size: $font-base * 1.25 ;

@@ -1,0 +1,240 @@
+@import "../../constants/variables";
+@import "../../constants/layout";
+@import "../../constants/styles";
+@import "../../constants/animation";
+
+.section-product-backlog {
+
+  .container {
+    position: relative;
+    height: 100vh;
+
+    .btn-hint {
+      position: absolute;
+      top: 50vh;
+      left: 45vw;
+    }
+
+    .btn-action {
+      position: absolute;
+      right: 0;
+      bottom: 84px;
+    }
+  }
+}
+
+.message-container {
+  padding: 28px 40px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hole {
+  position: absolute;
+  top: 20px;
+  left: 32px;
+}
+
+.role-po {
+  width: 320px;
+  margin-right: 40px;
+  z-index: 50;
+}
+
+.role-po-light {
+  width: 468px;
+  position: absolute;
+  top: 28px;
+  left: -40px;
+}
+
+.message-content {
+  flex-grow: 1;
+  padding: 40px 60px 40px 100px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, rgba(0, 255, 224, 0) 0%, rgba(0, 255, 224, 0.03) 59.9%, rgba(0, 255, 224, 0.12) 78.12%, rgba(0, 255, 224, 0.36) 100%), rgba(10, 13, 20, 0.6);
+  border: 2px solid $primary-color;
+  box-shadow: 0px 0px 24px 8px rgba(0, 255, 224, 0.3), 0px 0px 4px 4px rgba(0, 255, 224, 0.4);
+  backdrop-filter: blur(5px);
+  margin-top: 20px;
+  position: relative;
+
+  &-tag {
+    width: 84px;
+    height: 52px;
+    background-image: url(../../../public/images/role/title_po.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: -12px;
+  }
+
+  .h2, .body-text {
+    color: $white;
+
+    img {
+      display: inline-block;
+      margin: 0 12px;
+      vertical-align: bottom;
+    }
+  }
+
+  .highlight-text {
+    color: $text-tint-color;
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  right: 32px;
+  bottom: 40px;
+  animation: float-down infinite 1.5s ease-in-out;
+}
+
+.backlog-container {
+  max-width: 500px;
+  margin: -60px auto 0;
+  position: relative;
+  z-index: 50;
+
+  &::before, &::after {
+    content: "";
+    width: 500px;
+    height: 604px;
+    border-radius: 24px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+
+  &::before {
+    background: rgba(0, 255, 224, 0.2);
+    right: -12px;
+    top: 12px;
+    z-index: -1;
+  }
+
+  &::after {
+    background: rgba(0, 255, 224, 0.1);
+    right: -24px;
+    top: 24px;
+    z-index: -2;
+  }
+
+  .backlog-item-float {
+    padding: 12px 24px;
+    background: rgba(10, 13, 20, 0.6);
+    opacity: 0.3;
+    border: 4px solid $primary-color;
+    border-radius: 20px;
+    font-weight: 500;
+    color: $white;
+    position: absolute;
+  }
+
+  .float1 {
+    top: 250px;
+    left: -318px;
+  }
+
+  .float2 {
+    top: 370px;
+    left: -414px;
+  }
+
+  .float3 {
+    top: 252px;
+    right: -460px;
+  }
+
+  .float4 {
+    top: 396px;
+    right: -300px;
+  }
+
+  .selected {
+    opacity: 1;
+  }
+}
+
+.backlog-title {
+  padding-block: 1rem;
+  background-color: $primary-color;
+  text-align: center;
+  color: $bg-dark;
+  border-radius: 20px 20px 0 0;
+
+  p {
+    color: $primary-dark-color;
+  }
+}
+
+.backlog-content {
+  padding: 32px 32px 32px 0;
+  background-color: rgba(0, 255, 224, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 20px 20px;
+  color: $white;
+  display: flex;
+  position: relative;
+
+  &-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 0 20px;
+    position: relative;
+
+    p:first-child::before {
+      content: "";
+      background: $white;
+      width: 2px;
+      height: 84%;
+      position: absolute;
+      top: 32px;
+      left: 8px;
+    }
+
+    p:first-child::after {
+      content: "";
+      padding: 5px;
+      border: solid $white;
+      border-width: 0 3px 3px 0;
+      position: absolute;
+      top: 388px;
+      left: 2px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &-e {
+    flex-grow: 1;
+    padding: 0;
+
+    li {
+      padding: 30px 24px;
+      border-radius: 20px;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .fill-in {
+      background: rgba(10, 13, 20, 0.6);
+      border: 4px solid $primary-color;
+      backdrop-filter: blur(2px);
+    }
+
+    .fill-empty {
+      border: 2px dashed $primary-color;
+      height: 96px;
+    }
+  }
+
+}
