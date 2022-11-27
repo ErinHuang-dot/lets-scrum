@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/lets-scrum/static/css/main.1759dbe7.css",
+    "main.js": "/lets-scrum/static/js/main.20fc8080.js",
+    "static/js/787.c7c4fe6e.chunk.js": "/lets-scrum/static/js/787.c7c4fe6e.chunk.js",
+    "static/media/bg_village.png": "/lets-scrum/static/media/bg_village.8c259221460815382f90.png",
+    "index.html": "/lets-scrum/index.html",
+    "static/media/title_po.svg": "/lets-scrum/static/media/title_po.8353c2c4fefdb34af38d.svg",
+    "main.1759dbe7.css.map": "/lets-scrum/static/css/main.1759dbe7.css.map",
+    "main.20fc8080.js.map": "/lets-scrum/static/js/main.20fc8080.js.map",
+    "787.c7c4fe6e.chunk.js.map": "/lets-scrum/static/js/787.c7c4fe6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1759dbe7.css",
+    "static/js/main.20fc8080.js"
+  ]
+}
